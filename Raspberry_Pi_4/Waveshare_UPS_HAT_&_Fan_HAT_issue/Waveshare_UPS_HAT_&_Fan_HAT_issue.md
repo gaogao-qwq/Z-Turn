@@ -4,7 +4,7 @@
 
 ![](assets/1.png)
 
-最后经过和微雪售后的一番 debug，发现了是由于我安装的 [微雪 Fan_HAT](https://www.waveshare.net/wiki/Fan_HAT) 使用的官方提供的 C 程序调用 bcm 库时出现了问题。解决办法也很简单，只要把 C 换成官方提供的同样用于控制 Fan_HAT 的 Python 程序即可，当然别忘了把 local.rc 下的开机自启执行 C 程序指令也换成 Python 的。
+最后经过和微雪售后的一番 debug，发现了是由于我安装的 [微雪 Fan_HAT](https://www.waveshare.net/wiki/Fan_HAT) 使用的官方提供的 C 程序调用 bcm 库时出现了问题。解决办法也很简单，只要把 C 换成官方提供的同样用于控制 Fan_HAT 的 Python 程序后硬重启即可，当然别忘了把 local.rc 下的开机自启执行 C 程序指令也换成 Python 的。
 
 ![](assets/20221024_194418_image.png)
 
